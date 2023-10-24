@@ -1,5 +1,4 @@
 import { useParams } from 'react-router-dom';
-import productData from "../../Database/database.json"
 import '../../App.css';
 
 export function ProductPage() {

@@ -13,6 +13,7 @@ export function Category() {
               <ProductCard key={product.id} name={product.name} image={product.image} price={product.price} description={product.description} />
             )
           }
+          return null
         })}
       </div>
     </div>
