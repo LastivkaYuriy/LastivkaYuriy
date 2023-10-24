@@ -1,0 +1,72 @@
+[
+  {
+    "name": "muhomor",
+    "price": 12,
+    "description": "description template",
+    "id": "1",
+    "category": "dried"
+  },
+  {
+    "name": "sunflower seeds",
+    "price": 5,
+    "description": "Fresh and healthy sunflower seeds.",
+    "id": "2",
+    "category": "snacks"
+  },
+  {
+    "name": "green apples",
+    "price": 1.5,
+    "description": "Crisp and juicy green apples.",
+    "id": "3",
+    "category": "fruits"
+  },
+  {
+    "name": "chocolate bar",
+    "price": 2.5,
+    "description": "Delicious milk chocolate bar.",
+    "id": "4",
+    "category": "sweets"
+  },
+  {
+    "name": "white rice",
+    "price": 3,
+    "description": "High-quality long-grain white rice.",
+    "id": "5",
+    "category": "grains"
+  },
+  {
+    "name": "lettuce",
+    "price": 1,
+    "description": "Fresh and crispy lettuce leaves.",
+    "id": "6",
+    "category": "vegetables"
+  },
+  {
+    "name": "bottled water",
+    "price": 0.75,
+    "description": "Purified drinking water in a bottle.",
+    "id": "7",
+    "category": "beverages"
+  },
+  {
+    "name": "chicken breast",
+    "price": 6.5,
+    "description": "Boneless and skinless chicken breast.",
+    "id": "8",
+    "category": "meat"
+  },
+  {
+    "name": "shampoo",
+    "price": 4,
+    "description": "Premium quality shampoo for shiny hair.",
+    "id": "9",
+    "category": "personal care"
+  },
+  {
+    "name": "toothpaste",
+    "price": 2,
+    "description": "Fluoride toothpaste for strong teeth.",
+    "id": "10",
+    "category": "personal care"
+  }
+]

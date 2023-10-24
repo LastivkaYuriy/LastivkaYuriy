@@ -1,0 +1,71 @@
+p{
+	font-size: 1.5em;
+}
+h5{
+	font-size: min(4vw, 1.3rem);
+}
+h6{
+	font-size: min(3.5vw, 1.1rem);
+}
+.App{
+	background-color: #dddddd;
+}
+.Navbar{
+	background-color: #E6E6E6;
+	font-size: min(4vw, 1.2rem);
+}
+.Navbar > .bot-row > ul{
+	border-top: 1px solid #d5d5d5;
+}
+.navbar-link{
+	text-transform: capitalize;
+	margin-right: 15px;
+	color: var(--bs-blue);
+}
+
+.content-header{
+	min-width: 100vw;
+	min-height: 500px;
+	background-image: url('https://placehold.co/1000x1000');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header-text{
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.header-text > p{
+	font-size: min(5vw, 3rem);
+	line-height: 1.2;
+}
+.header-text > div > p{
+	font-size: min(3vw, 1.4rem);
+	line-height: 1.6;
+}
+
+.ProductCard{
+	width: 240px;
+	margin: 5px;
+	background-color: #efefef;
+}
+
+.Footer{
+	background-color: #E6E6E6;
+}
+
+.zoom-overlay{
+	overflow: hidden;
+}
+.zoom{
+	transition: transform .3s;
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+@media (max-width: 576px){
+	.ProductCard{
+		max-width: 47%;
+	}
+}
