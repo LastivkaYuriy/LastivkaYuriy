@@ -4,9 +4,9 @@ import { ProductCard } from "../ProductCard/ProductCard.jsx"
 export function Shop() {
   return (
     <div className="Shop container-lg">
-      <p>Shop</p>
+      <p style={{fontSize: 'min(7vw, 3rem)', fontWeight: '600'}} className="text-center">Каталог товаров</p>
       <div className="d-flex justify-content-around align-items-start flex-wrap">
-        {productData.map((product) => <ProductCard key={product.id} id={product.id} name={product.name} image={product.image} price={product.price} description={product.description} />)}
+        {productData.map((product) => <ProductCard key={product.id} image={product.images[0]} name={product.name} price={product.price} description={product.description} />)}
       </div>
     </div>
   );

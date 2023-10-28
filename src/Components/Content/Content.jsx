@@ -3,8 +3,8 @@ import { Shop } from '../Shop/Shop.jsx'
 export function Content() {
   return (
     <div className="Content">
-      <section className="content-header px-4 py-5">
-        <div className="header-text text-white p-3 container-lg" >
+      <section className="content-header px-4 py-5 mb-3" style={{backgroundImage: 'url(/assets/images/e4805e57-794c-4d88-b893-c7ac42f604ac.jpeg)'}}>
+        <div className="header-text p-3 container-lg" >
           <p className="text-center">Купить сушеный красный мухомор в Украине - Микродозинг мухоморов</p>
           <div>
             <p><strong>Мухоморный микродозинг</strong> — содержит всю целительную силу красного мухомора. Микродозинг мухоморов Amanita Muscaria оказывает не только психотерапевтическое, но и общее благотворное физиологическое воздействие. <strong>Все наши мухоморы без присохшего песка, листьев, травы и так далее.</strong> Грибы собраны в самой малонаселённой и экологически чистой части Украинского Полесья — северо-восточной.</p>

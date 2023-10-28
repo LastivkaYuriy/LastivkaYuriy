@@ -19,9 +19,11 @@ function App() {
   let categories = createCategories(productData);
   return (
     <div className="App">
-      <Navbar categories={categories} />
-      <div className="container-lg p-2">
-        <p style={{fontSize: 'min(4vw, 1.5rem)', fontWeight: '600'}} className="text-center">Отправка заказов каждый день в порядке очереди. Время отправки заказа Новая Почта 1-3 дня. Укрпочта до 5 дней. Спасибо за понимание.</p>
+      <div>
+        <Navbar categories={categories} />
+        <div className="container-lg p-3" style={{borderBottom: '1px solid var(--second-color)'}}>
+          <p style={{fontSize: 'min(4vw, 1.5rem)', fontWeight: '600'}} className="text-center pb-2 mb-0">Отправка заказов каждый день в порядке очереди. Время отправки заказа Новая Почта 1-3 дня. Укрпочта до 5 дней. Спасибо за понимание.</p>
+        </div>
       </div>
       <Outlet />
       <Footer />
