@@ -2,7 +2,7 @@
 	--main-color: #283249;
 	--second-color: #EAEAEA;
 	--third-color: #8a84e2;
-	--fourth-color: #eda8a0;
+	--fourth-color: #dba8a0;
 	--fifth-color: #9B287B;
 }
 a{
@@ -36,7 +36,6 @@ h6{
 	min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .Navbar{
 	color: var(--main-color);
@@ -66,7 +65,13 @@ h6{
 .navbar-link:hover{
 	text-shadow: 0px 0px 2px;
 }
-
+.Content{
+	background-image: url('./bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50%;
+}
 .content-header{
 	min-height: 500px;
 	background-attachment: fixed;
@@ -89,6 +94,7 @@ h6{
 .ProductCard{
 	max-width: 240px;
   min-width: 31%;
+  min-height: 240px;
   aspect-ratio: 1/1;
 	margin: 5px;
 	background-color: #efefef;
@@ -140,6 +146,7 @@ li > button{
 .Footer{
 	color: var(--second-color);
 	background-color: var(--main-color);
+	margin-top: auto;
 }
 .Footer-top{
 	color: var(--main-color);
@@ -153,6 +160,7 @@ li > button{
 @media (max-width: 576px){
 	.ProductCard{
 		max-width: 47%;
+		min-width: 47%;
 		aspect-ratio: 1/1.5;
 	}
 }
@@ -161,6 +169,12 @@ li > button{
 	.ProductCard{
 		max-width: 85%;
 		min-width: 85%;
+	}
+	.card-title{
+		font-size: 18px;
+	}
+	.card-subtitle{
+		font-size: 14px;
 	}
 }
 

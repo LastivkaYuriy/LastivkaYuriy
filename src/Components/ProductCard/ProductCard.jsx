@@ -4,7 +4,7 @@ export function ProductCard(props) {
   return (
     <div className="ProductCard card mb-4 border-2">
       <div className="card-body p-0">
-        <Link to={`/shop/${props.name}`} className="d-flex" style={{height: "100%"}}>
+        <Link to={`/shop/${props.id}`} className="d-flex" style={{height: "100%"}}>
           <div className="zoom-overlay w-100 h-100 rounded-top">
             <div className="zoom" style={{background: `no-repeat url(/assets/images/${props.image})`, backgroundPosition: 'center', backgroundSize: 'cover', height: '100%', width: '100%'}}>
               

@@ -1,9 +1,22 @@
 import { useParams } from 'react-router-dom';
 import { Link } from "react-router-dom";
-import productData from "../../Database/database.json"
+import productData_ru from "../../Database/database_ru.json"
+import productData_uk from "../../Database/database_uk.json"
 import '../../App.css';
+import i18next from "i18next";
+
 
 export function ProductPage() {
+  
+  let currentDatabaseUsed = function(){
+    let currentDatabase;
+    if(i18next.language === "ru"){
+      currentDatabase = productData_ru
+    }else if(i18next.language === "uk"){
+      currentDatabase = productData_uk
+    }
+    return currentDatabase
+  }
 
   function getHeight(){
     let activeNext = document.getElementsByClassName('carousel-item-next')[0];
@@ -18,10 +31,10 @@ export function ProductPage() {
     }
   }
 
-  let currentProduct = useParams().productName; 
+  let currentProduct = useParams().productId; 
   function getCurrentProductData(){
-    for(let product of productData){
-      if(product.name === currentProduct){
+    for(let product of currentDatabaseUsed()){
+      if(product.id === currentProduct){
         return product;
       }
     }
@@ -60,12 +73,12 @@ export function ProductPage() {
           <h1>{getCurrentProductData().name}</h1>
           <h5 className="price-text">{getCurrentProductData().price}</h5>
         </div>
-        <h6 className="lh-base">{getCurrentProductData().description}</h6>
+        <h5 className="lh-base">{getCurrentProductData().description}</h5>
         <h6 className="smalest-text mt-5">Категория: <Link className="smalest-text navbar-link">{getCurrentProductData().category}</Link></h6>
       </div>
-      <div className="p-3 mt-5">
-        <h2 className="mb-3">{getCurrentProductData().addText[0].heading}</h2>
-        <h5 className="lh-base">{getCurrentProductData().addText[0].text}</h5>
+      <div className="pb-3 mt-5">
+        <h3 className="mb-3">{getCurrentProductData().addText[0].heading}</h3>
+        <h6 className="lh-base">{getCurrentProductData().addText[0].text}</h6>
       </div>
     </div>
   );

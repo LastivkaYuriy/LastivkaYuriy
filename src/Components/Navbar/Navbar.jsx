@@ -4,8 +4,34 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 import { useTranslation } from "react-i18next";
 import '../../App.css';
 
-export function Navbar(props) {
+import productData_ru from "../../Database/database_ru.json"
+import productData_uk from "../../Database/database_uk.json"
+
+let currentDatabaseUsed = function(){
+  let currentDatabase;
+  if(i18next.language === "ru"){
+    currentDatabase = productData_ru
+  }else if(i18next.language === "uk"){
+    currentDatabase = productData_uk
+  }
+  return currentDatabase
+}
+
+let createCategories = (allProducts) => {
+  let categories = [];
+  for (const product of allProducts) {
+    if (!categories.includes(product.category)) {
+      categories.push(product.category);
+    }
+  }
+  return categories
+}
+
+export function Navbar() {
   const { t } = useTranslation();
+
+  let categories = createCategories(currentDatabaseUsed());
+  
   return (
     <nav className="Navbar navbar pt-0 pb-0">
 
@@ -29,7 +55,7 @@ export function Navbar(props) {
       </div>
       <div className="container-fluid w-100 d-flex justify-content-center">
       <ul style={{listStyle: 'none', borderTop: '1px solid #1a22344d'}} className="w-100 p-2 px-md-5 px-0 m-0 d-flex flex-wrap justify-content-evenly align-items-center">
-        {props.categories.map((category) => {
+        {categories.map((category) => {
             return(
               <li key={category} className="navbar-link"><Link to={`/product-category/${category}`}>{category}</Link></li>
             )
