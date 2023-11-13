@@ -38,8 +38,8 @@ export function Navbar() {
       <div className="nav-top container-lg d-flex flex-wrap p-2 justify-content-around align-items-center">
         <a href="/"><img className="img-fluid" style={{maxHeight: '100px'}} src="/assets/images/LOGO-tp.png" alt="" /></a>
         <ul style={{listStyle: 'none'}} className="p-0 m-0 d-flex flex-wrap justify-content-evenly align-items-center">
-          <li className="navbar-link-top"><Link to={"/"}>main</Link></li>
-          <li className="navbar-link-top"><Link to={"/shop"}>all shop</Link></li>
+          <li className="navbar-link-top"><Link to={"/"}>{t('nav_1')}</Link></li>
+          <li className="navbar-link-top"><Link to={"/shop"}>{t('nav_2')}</Link></li>
         </ul>
         <div className="btn-group">
           <button style={{width: '75px', height: '31px', fontWeight: '500' }} className="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
