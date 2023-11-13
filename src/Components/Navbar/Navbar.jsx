@@ -35,9 +35,9 @@ export function Navbar() {
   return (
     <nav className="Navbar navbar pt-0 pb-0">
 
-      <div className="container-lg d-flex flex-wrap p-2 justify-content-around align-items-center">
+      <div className="nav-top container-lg d-flex flex-wrap p-2 justify-content-around align-items-center">
         <a href="/"><img className="img-fluid" style={{maxHeight: '100px'}} src="/assets/images/LOGO-tp.png" alt="" /></a>
-        <ul style={{listStyle: 'none'}} className="m-0 d-flex flex-wrap justify-content-around align-items-center">
+        <ul style={{listStyle: 'none'}} className="p-0 m-0 d-flex flex-wrap justify-content-evenly align-items-center">
           <li className="navbar-link-top"><Link to={"/"}>main</Link></li>
           <li className="navbar-link-top"><Link to={"/shop"}>all shop</Link></li>
         </ul>
@@ -53,7 +53,7 @@ export function Navbar() {
           </ul>
         </div>
       </div>
-      <div className="container-fluid w-100 d-flex justify-content-center">
+      <div className="nav-bot container-fluid w-100 d-flex justify-content-center">
       <ul style={{listStyle: 'none', borderTop: '1px solid #1a22344d'}} className="w-100 p-2 px-md-5 px-0 m-0 d-flex flex-wrap justify-content-evenly align-items-center">
         {categories.map((category) => {
             return(

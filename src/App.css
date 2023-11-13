@@ -39,25 +39,34 @@ h6{
 }
 .Navbar{
 	color: var(--main-color);
-	background-color: var(--second-color);
+	background-image: linear-gradient(to top, #283249, #574b65, #86667c, #b4858f, #dba8a0);
 }
+.nav-top{
+	
+}
+.nav-bot{
 
+}
 
 .Navbar > div > ul{
 	width: 60%;
 }
 
-.navbar-link-top{
-	font-size: min(5vw, 1.5rem);
 
-}
 .navbar-link{
 	font-size: min(5vw, 1.2rem);
 	margin-right: 15px;
 	color: var(--fifth-color);
 	text-shadow: 0px 0px 1px;
 	transition: text-shadow 0.5s linear, color 0.5s linear;
-	animation: 6s linear 0s infinite colourSwitch;
+	animation: 10s linear 0s infinite colourSwitch;
+}
+.navbar-link-top{
+	color: var(--third-color);
+	font-weight: 600;
+	font-size: min(10vw, 1.7rem);
+	transition: text-shadow 0.5s linear, color 0.5s linear;
+	animation: 10s reverse 0s infinite colourSwitch2;
 }
 .navbar-link-top:first-letter, .navbar-link:first-letter{
 	text-transform: capitalize;
@@ -194,10 +203,22 @@ li > button{
 
 @keyframes colourSwitch{
 	from{
+		color: var(--third-color);
+	}
+	50%{
+		color: var(--fourth-color);
+	}
+	to{
+		color: var(--third-color);
+	}
+}
+
+@keyframes colourSwitch2{
+	from{
 		color: var(--fifth-color);
 	}
 	50%{
-		color: var(--third-color);
+		color: var(--main-color);
 	}
 	to{
 		color: var(--fifth-color);
