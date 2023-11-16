@@ -54,7 +54,7 @@ export function ProductPage() {
   })
 
   return (
-    <div className="ProductPage container-lg pb-3 ">
+    <div className="ProductPage container-lg pb-3 mt-3">
       <div className="clearfix pt-3">
         <div className="float-start carousel-block-wrap">
           <div id="carouselIndicators" className="carousel-block carousel carousel-dark slide p-0 px-md-3 w-100" style={{overflow: 'hidden'}} data-bs-touch="false">
